@@ -1,5 +1,7 @@
 ## Todo List
 
+### [Clique aqui para ver o deploy no repl.it](https://pixel-art.unamednada.repl.co/)
+
 Projeto realizado em HTML, CSS e JS.
 
 Uma web app que simula uma lista de tarefas simples, com possibilidades de marcar tarefas como feitas e até salvar a lista para checar posteriormente. Lógica desenvolvida em JS vanilla, servidor express + http. Deploy feito no repl.it.
