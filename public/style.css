@@ -1,7 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+
 .completed {
-  text-decoration: line-through solid black;
+  text-decoration: line-through 2px solid red;
+  color: lightgray;
 }
 
 .selected {
   background-color: gray;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 0 1%;
+  color: white;
+}
+
+.item-tarefa {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 }
