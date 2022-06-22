@@ -77,4 +77,34 @@ main {
   #insert button {
     margin-top: 1%;
   }
+
+  #button-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #button-div button {
+    flex-basis: 33.33%;
+    margin: 0.5%;
+    max-height: 38px;
+    text-overflow: clip;
+  }
+}
+
+@media screen and ( max-width : 430px ) {
+  #button-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #button-div button {
+    flex-basis: 50%;
+    margin: 0.5%;
+    max-height: 38px;
+    text-overflow: clip;
+  }
 }
