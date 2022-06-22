@@ -9,27 +9,29 @@
   <link rel="stylesheet" href="public/style.css">
 </head>
 <body>
-  <div class="card w-50">
-    <div class="card-header">
-      <h1 class="text-center ">Todo List</h1>
+  <main class="border border-secondary rounded p-5">
+    <div class="card w-75">
+      <div class="card-header">
+        <h1 class="text-center ">Todo List</h1>
+      </div>
+      <p id="funcionamento" class="text-center mt-3">click to select. <strong>double click to mark as done.</strong></p>
     </div>
-    <p id="funcionamento" class="text-center mt-3">click to select. <strong>double click to mark as done.</strong></p>
-  </div>
-  <main>
-    <section class="mt-5 mb-3 d-flex justify-content-between align-items-center"> 
+    <section  id="insert" class="mt-5 mb-3 d-flex w-75 justify-content-center align-items-center"> 
       <label for="texto-tarefa"><h5 class="text-center mt-2">insert task</h5></label>
       <input type="text" id="texto-tarefa" placeholder="new task">
-      <button id="criar-tarefa" class="btn btn-primary">let's DO IT!</button>
+      <button id="criar-tarefa" class="btn btn-primary">Add</button>
     </section>
     <section>
       <ol id="lista-tarefas">
       </ol>
-      <button class="btn btn-danger" id="apaga-tudo">Clear</button>
-      <button class="btn btn-secondary" id="remover-finalizados">Clear Done</button>
-      <button class="btn btn-primary" id="salvar-tarefas">Save</button>
-      <button class="btn btn-dark"id="mover-cima">Up</button>
-      <button class="btn btn-dark" id="mover-baixo">Down</button>
-      <button class="btn btn-primary"id="remover-selecionado">Clear Selected</button>
+      <div class="w-100">
+        <button class="btn btn-danger" id="apaga-tudo">Clear</button>
+        <button class="btn btn-secondary" id="remover-finalizados">Clear Done</button>
+        <button class="btn btn-primary" id="salvar-tarefas">Save</button>
+        <button class="btn btn-dark"id="mover-cima">Up</button>
+        <button class="btn btn-dark" id="mover-baixo">Down</button>
+        <button class="btn btn-primary"id="remover-selecionado">Clear Selected</button>
+      </div>
     </section>
   </main>
   <script src="public/script.js"></script>
