@@ -18,10 +18,9 @@ body {
 }
 
 .selected {
-  background-color: gray;
+  background-color: lightskyblue;
   border-radius: 4px;
   width: fit-content;
-  padding: 0 1%;
   color: white;
 }
 
@@ -30,4 +29,6 @@ body {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  padding: 1%;
+  width: 100%;
 }
