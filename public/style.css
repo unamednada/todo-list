@@ -7,9 +7,27 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin-top: 100px;
+  width: 50%;
+}
+
+#insert {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+#insert label , #insert input {
+  margin-right: 1%;
 }
 
 .completed {
@@ -18,10 +36,9 @@ body {
 }
 
 .selected {
-  background-color: gray;
+  background-color: lightskyblue;
   border-radius: 4px;
   width: fit-content;
-  padding: 0 1%;
   color: white;
 }
 
@@ -30,4 +47,34 @@ body {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  padding: 1%;
+  width: 100%;
+}
+
+@media screen and ( max-width : 1414px ) {
+
+  main {
+    width: 75%;
+  }
+}
+
+@media screen and ( max-width : 950px ) {
+
+  main {
+    width: 100%;
+  }
+}
+
+@media screen and ( max-width : 650px ) {
+
+  #insert {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #insert button {
+    margin-top: 1%;
+  }
 }
